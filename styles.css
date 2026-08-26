@@ -6,65 +6,65 @@ body {
     background-color: #F2F2F2;
 }
 
-.contenedor {
+.contenedor-wiki {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
-        "A A"
-        "C B"
-        "D D";
+        "cabecera cabecera"
+        "indice   articulo"
+        "pie      pie";
     gap: 10px;
     padding: 20px;
 }
 
-.a {
-    grid-area: A;
+header {
+    grid-area: cabecera;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #bbbbbb;
+    background-color: #6d6d6d;
     border-bottom: 4px solid #C9A227;
     color: white;
 }
 
-.b {
-    grid-area: C;
-    background-color: rgb(173, 173, 173);
+aside {
+    grid-area: indice;
+    background-color: white;
     border-left: 4px solid #AC1E2D;
     padding: 20px;
 }
 
-.b a {
+aside a {
     color: #1A1A1A;
     text-decoration: none;
 }
 
-.b a:hover {
+aside a:hover {
     color: #AC1E2D;
 }
 
-.x {
-    grid-area: B;
+main {
+    grid-area: articulo;
     background-color: white;
     padding: 25px;
 }
 
-.x h2,
-.x h3 {
+main h2,
+main h3 {
     color: #1A1A1A;
     border-bottom: 1px solid #ddd;
     padding-bottom: 8px;
 }
 
-.x img {
+main img {
     max-width: 100%;
     height: auto;
 }
 
-.footer {
-    grid-area: D;
+footer {
+    grid-area: pie;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -73,12 +73,12 @@ body {
     padding: 15px;
 }
 
-.footer a {
+footer a {
     color: white;
     text-decoration: none;
 }
 
-.footer a:hover {
+footer a:hover {
     color: #C9A227;
 }
 
